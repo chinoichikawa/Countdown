@@ -1,0 +1,42 @@
+#container {
+   margin:50px auto;
+   width:300px;
+   text-align:center;
+}
+
+#countDown {
+   margin:0 0 15px;
+   font-size:200px;
+   line-height:1;
+   text-align:center;
+   font-family: 'Oswald', sans-serif;
+   display: inline-block;
+}
+
+#control {
+   clear:both;
+}
+#control input {
+   margin:0 5px;
+   width:100px;
+   height:30px;
+}
+
+#error {
+   margin:10px;
+   color:#F00;
+   font-size:14px;
+}
+
+.shake {
+	display: inline-block;
+	animation: hurueru .1s infinite;
+}
+
+@keyframes hurueru {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
